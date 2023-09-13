@@ -6,6 +6,7 @@ import { SequelizeModule } from '@nestjs/sequelize';
 import { UsersModule } from './users/users.module';
 import { EmployeeModule } from './employee/employee.module';
 import { AttendanceModule } from './attendance/attendance.module';
+import { StaffModule } from './staff/staff.module';
 import config from 'config/db_config';
 
 
@@ -17,7 +18,8 @@ import config from 'config/db_config';
     ScheduleModule.forRoot(),
     UsersModule,
     EmployeeModule,
-    AttendanceModule
+    AttendanceModule,
+    StaffModule
   ],
   controllers: [AppController],
   providers: [AppService],
