@@ -10,7 +10,6 @@ COPY . .
 
 RUN npm run build
 
-EXPOSE 3000/tcp
 
 CMD [ "node", "dist/src/main.js" ]
 
