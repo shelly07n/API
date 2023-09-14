@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   // Configure CORS options
   const corsOptions: CorsOptions = {
-    origin: 'https://portfolio-7v0fiftqv-shelly07n.vercel.app/staff', // Replace with the actual URL of your Vue.js frontend
+    origin: 'https://portfolio-7v0fiftqv-shelly07n.vercel.app', // Replace with the actual URL of your Vue.js frontend
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // Allow cookies and headers with credentials
   };
