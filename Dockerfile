@@ -1,4 +1,4 @@
-FROM node:18.16.1-alpine
+FROM node:18-alpine as builder
 
 WORKDIR /usr/src/app
 
@@ -12,5 +12,5 @@ RUN npm run build
 
 EXPOSE 3000/tcp
 
-CMD [ "node", "dist/main.js" ]
+CMD [ "node", "dist/src/main.js" ]
 
