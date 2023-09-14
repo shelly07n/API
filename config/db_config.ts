@@ -19,6 +19,7 @@ const config: SequelizeModuleOptions = {
     database: "shelton",
     autoLoadModels: true,
     synchronize: true,
+    
     sync: { alter: true }, // Remove this for production
 };
 
